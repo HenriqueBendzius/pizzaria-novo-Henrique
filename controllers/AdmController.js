@@ -1,4 +1,5 @@
 const PizzasServices = require("../services/PizzasServices");
+const fs = require('fs')
 
 const AdmController = {
     listarPizzas: (req, res) =>{
@@ -22,11 +23,16 @@ const AdmController = {
         // As informações podem vir como parâmetro de rota...
         // console.log(req.params)
 
+        //renomear arquivo
+        console.log(req.file);
+        let novoNome = `${Date.now()}-${req.file.originalname}`;
+        fs.renameSync(req.file.path, `public/img/${novoNome}`);
+
         let pizza = {
             nome: req.body.nome,
             ingredientes: req.body.ingredientes.split(',').map(e => e.trim()),
             preco: Number(req.body.preco),
-            img: "/img/no-image.png",
+            img: `/img/${novoNome}`,
             destaque: false,
             score: 0
         }
@@ -34,6 +40,7 @@ const AdmController = {
         PizzasServices.adicionarPizza(pizza);
 
         res.redirect('/adm/pizzas');
+        
     },
     showEditPizza: (req, res) => {
         // Capiturar o id da pizza a ser editada (req.params)

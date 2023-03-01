@@ -13,7 +13,7 @@ const bloqueiaForaDeHora =(req, res, next)=>{
 
     let hora = (new Date()).getHours();
 
-    if(hora <= 10){ 
+    if(hora <= 8){ 
         res.send("volte mais tarde");
 
     }else {

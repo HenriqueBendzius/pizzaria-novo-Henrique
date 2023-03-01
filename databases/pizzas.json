@@ -184,5 +184,61 @@
         "destaque": false,
         "score": 0,
         "id": 16
+    },
+    {
+        "nome": "lambreta",
+        "ingredientes": [
+            "peixe fresco"
+        ],
+        "preco": 70,
+        "img": "/img/no-image.png",
+        "destaque": false,
+        "score": 0,
+        "id": 17
+    },
+    {
+        "nome": "sururu",
+        "ingredientes": [
+            "peixe cru"
+        ],
+        "preco": 90,
+        "img": "/img/no-image.png",
+        "destaque": false,
+        "score": 0,
+        "id": 18
+    },
+    {
+        "nome": "frango",
+        "ingredientes": [
+            "frango desfiado"
+        ],
+        "preco": 110,
+        "img": "/img/no-image.png",
+        "destaque": false,
+        "score": 0,
+        "id": 19
+    },
+    {
+        "nome": "teste",
+        "ingredientes": [
+            "teste",
+            "teste"
+        ],
+        "preco": 1,
+        "img": "/img/no-image.png",
+        "destaque": false,
+        "score": 0,
+        "id": 20
+    },
+    {
+        "nome": "sorte ",
+        "ingredientes": [
+            "trevo"
+        ],
+        "preco": 100,
+        "img": "/img/1677677398955-robo.2jpg.jpg",
+        "destaque": false,
+        "score": 0,
+        "id": 21
     }
 ]
